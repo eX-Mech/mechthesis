@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/jcanton/mechthesis.svg?branch=master)](https://travis-ci.org/jcanton/mechthesis/builds)
+[![Coverage Status](https://coveralls.io/repos/github/jcanton/mechthesis/badge.svg?branch=master)](https://coveralls.io/github/jcanton/mechthesis?branch=master)
+
+
 MechThesis
 ==========
 
