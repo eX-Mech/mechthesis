@@ -5,12 +5,11 @@
 MechThesis
 ==========
 
-Jacopo Canton, Nicolo` Fabbiane (in alphabetical order)
-December, 2015
+:Authors: Jacopo Canton, Nicolo` Fabbiane (in alphabetical order)
+:Version: 1.0 (January, 2016)
 
 
 This template is meant for PhD and Licentiate thesis at KTH Mechanics.
-
 This is just a STARTING POINT: you can use it or not, like it or not, edit it
 or not, thank us or not.
 
@@ -28,7 +27,7 @@ A Makefile has been developed for this template and tested for 'pdflatex' and
  - clean_papers: clean auxiliary files for the papers only
 
 
-1.1 Partial compilation via \includeonly
+**Partial compilation via \includeonly**
 
 It is possible to compile only some parts of the document via '\includeonly'.
 This command permits to specify which '\include' arguments are compiled.
@@ -45,7 +44,7 @@ this feature can be found at https://en.wikibooks.org/wiki/TeX/includeonly.
 USE OF THE TEMPLATE
 -------------------
 
-2.1 Papers
+**Papers**
 
 Each paper has its own folder numbered consecutively, as it appears in the
 thesis. Each folder must contain the source files and the figures necessary for
@@ -64,7 +63,7 @@ of the Papers' are automatically written using the paper information found in
 paper.tex.
 
 
-2.2 Packages and commands
+**Packages and commands**
 
 Two files have been addressed to contain custom commands and packages:
 'commands.tex' and 'packages.tex'. These files are located in the main
@@ -72,7 +71,7 @@ folder.
 We reccomend to add commands and packages in these files only.
 
 
-2.4 List of options for the class, defaults are in [ ]:
+**List of options for the class** -- defaults are in [ ]:
 
  - paper size:
     - a4paper:       A4 format
