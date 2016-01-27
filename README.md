@@ -57,7 +57,7 @@ Two files have been addressed to contain custom commands and packages:
 folder.
 We reccomend to add commands and packages in these files only.
 
-### List of options for the class ###### defaults are in [ ]:
+### List of options for the class, defaults are in [ ]:
 
  - paper size:
     - a4paper:        A4 format
