@@ -5,8 +5,8 @@
 MechThesis
 ==========
 
-:Authors: Jacopo Canton, Nicolo` Fabbiane (in alphabetical order)
-:Version: 1.0 (January, 2016)
+Jacopo Canton, Nicolo` Fabbiane (in alphabetical order)
+January, 2016
 
 
 This template is meant for PhD and Licentiate thesis at KTH Mechanics.
