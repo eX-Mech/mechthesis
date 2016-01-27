@@ -1,0 +1,13 @@
+language:
+  - latex
+
+install:
+
+script:
+    make
+
+after_success:
+    coveralls;
+
+notifications:
+  email: false
