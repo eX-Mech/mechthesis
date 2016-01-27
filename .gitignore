@@ -2,8 +2,10 @@
 *.out
 *.aux
 *.pls
+*.psm
 *.toc
 *.bbl
+*.blg
 *~
 *.swp
 .DS_Store
