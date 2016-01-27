@@ -1,0 +1,99 @@
+%------------------------------------------------------------------------------
+% Define title, author(s), affiliation and publishing status
+%
+\papertitle%[Succesfully testing an on-board Superlaser System] % Short title used in healines (optional)
+{%
+ Succesfully testing\\an on-board Superlaser System%
+}%
+%
+\papertoctitle{Succesfully testing an on-board Superlaser System} % Title for toc
+%
+\paperauthor[A. Skywalker \etal] % Short authors used in headlines and List Of Papers
+{%
+  Anakin Skywalker$^1$, Darth Vader$^2$, Obi-Wan Kenobi$^1$ \& Supreme Cancellor Palpatine$^2$%
+}%
+%
+\listpaperauthor{A. Skywalker, D. Vader, O.-W. Kenoby \& Palpatine}% (optional) Short authors used in List Of Papers
+%
+\paperaffiliation
+{%
+  $^1$ Linn\'e FLOW Centre, KTH Mechanics, S-100 44 Stockholm, Sweden\\%
+  $^2$ Super-laser LAB, The Death Star, not orbiting Alderaan anymore ;)%
+}%
+%
+\paperjournal[J. Force] % Short publish info used in List Of Papers
+{%
+	Journal of the Force%
+}%
+%
+\papervolume{51}%
+%
+%\papernumber{1}
+%
+\paperpages{pp. 123--122}%
+%
+\paperyear{3640}%
+%
+\papersummary%
+{% Insert summary of the paper here (used in introduction) 
+	Many computational biologists would agree that, had it not been for
+	Byzantine fault tolerance, the synthesis of replication that made
+	developing and possibly investigating erasure coding a reality might
+	never have occurred. In this work, we prove  the synthesis of linked
+	lists. Even though such a hypothesis at first glance seems
+	counterintuitive, it always conflicts with the need to provide
+	object-oriented languages to systems engineers. APER, our new framework
+	for mobile archetypes, is the solution to all of these grand
+	challenges.
+}%
+%
+\graphicspath{{paper2/}}%
+%
+%
+%===============================================================================
+%                            BEGIN PAPER
+%===============================================================================
+%
+\begin{paper}
+
+\makepapertitle
+
+%------------------------------------------------------------------------------
+% Abstract
+%------------------------------------------------------------------------------
+%
+\begin{paperabstract}{laser, death-star}% Keywords (not used if empty)
+	Many computational biologists would agree that, had it not been for
+	Byzantine fault tolerance, the synthesis of replication that made
+	developing and possibly investigating erasure coding a reality might
+	never have occurred. In this work, we prove  the synthesis of linked
+	lists. Even though such a hypothesis at first glance seems
+	counterintuitive, it always conflicts with the need to provide
+	object-oriented languages to systems engineers. APER, our new framework
+	for mobile archetypes, is the solution to all of these grand
+	challenges.
+\end{paperabstract}
+
+
+%------------------------------------------------------------------------------
+% Article
+%------------------------------------------------------------------------------
+%
+\input{paper2/article.tex}
+
+
+%------------------------------------------------------------------------------
+% Bibliography
+%------------------------------------------------------------------------------
+%
+\clearpage
+\bibliographystyle{jfm}
+\bibliography{thesis}
+%
+\IfFileExists{paper2/paper.bbl}{\input{paper2/paper.bbl}}{}
+
+
+%===============================================================================
+%                            END PAPER
+%===============================================================================
+\end{paper}

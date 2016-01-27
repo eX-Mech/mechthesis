@@ -1,0 +1,90 @@
+%------------------------------------------------------------------------------
+% Define title, author(s), affiliation and publishing status
+%
+\papertitle[Development of a Superlaser System] % Short title used in headlines (optional)
+{%
+  Development of a Superlaser System for space applications%
+}%
+%
+\papertoctitle{Development of a Superlaser System for space\\applications} % Title for toc
+%
+\paperauthor[A. Skywalker \& D. Vader] % Short authors used in headlines and List Of Papers
+{%
+  Anakin Skywalker$^1$ \& Darth Vader$^2$%
+}%
+%
+%\listpaperauthor{A. Skywalker \& D. Vader}% (optional) Short authors used in List Of Papers
+%
+\paperaffiliation
+{%
+  $^1$ Linn\'e FLOW Centre, KTH Mechanics, S-100 44 Stockholm, Sweden\\
+  $^2$ Super-laser LAB, The Death Star, currently orbiting Alderaan%
+}%
+%
+\paperjournal[Gal. Empire Publ.] % Short publish info used in List Of Papers
+{%
+	Galactic Empire Publications%
+}%
+%
+\papervolume{42}%
+%
+\papernumber{2}%
+%
+\paperpages{pp. 1--10}%
+%
+\paperyear{3639}%
+%
+\papersummary%
+{% Insert summary of the paper here (used in introduction) 
+	The implications of concurrent archetypes have been far-reaching and
+	pervasive. Given the current status of heterogeneous technology,
+	cyberinformaticians daringly desire the key unification of the Turing
+	machine and erasure coding. We explore new decentralized information,
+	which we call Tuna.
+}%
+%
+\graphicspath{{paper1/}}%
+%
+%
+%===============================================================================
+%                            BEGIN PAPER
+%===============================================================================
+%
+\begin{paper}
+
+\makepapertitle
+
+%------------------------------------------------------------------------------
+% Abstract
+%------------------------------------------------------------------------------
+%
+\begin{paperabstract}{}% Keywords (not used if empty)
+	The implications of concurrent archetypes have been far-reaching and
+	pervasive. Given the current status of heterogeneous technology,
+	cyberinformaticians daringly desire the key unification of the Turing
+	machine and erasure coding. We explore new decentralized information,
+	which we call Tuna.
+\end{paperabstract}
+
+
+%------------------------------------------------------------------------------
+% Article
+%------------------------------------------------------------------------------
+%
+\input{paper1/article.tex}
+
+
+%------------------------------------------------------------------------------
+% Bibliography
+%------------------------------------------------------------------------------
+%
+\clearpage
+\bibliographystyle{jfm}
+\bibliography{thesis}
+%
+\IfFileExists{paper1/paper.bbl}{\input{paper1/paper.bbl}}{}
+
+%===============================================================================
+%                            END PAPER
+%===============================================================================
+\end{paper}

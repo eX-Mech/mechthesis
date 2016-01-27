@@ -1,0 +1,8 @@
+*.pdf
+*.aux
+*.pls
+*.toc
+*.bbl
+*~
+*.swp
+.DS_Store

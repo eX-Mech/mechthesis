@@ -1,0 +1,130 @@
+\documentclass{MechThesis}
+%
+% Default options:
+% [thesissizeG5,twoside,onecolumn,10pt,reqno,tbtags,globalpagenum,final]
+%
+%
+% Available options:
+% - size: [a4paper, letterpaper, thesissisze, thesissizeA4, thesissizeG5]
+% - printing: [twoside, oneside]
+% - columns: [onecolumn, twocolumns]
+% - font size: [8pt, 9pt, 10pt, 11pt, 12pt]
+% - position of equation numbers: [leqno, reqno]
+% - split-equations numbers: [tbtags, centertags]
+% - page numbers in papers: [globalpagenum, paperpagenum]
+% - editing: [final, draft, printA4, cropmarks]
+% - papers cover: [happyadvisor] (use it if you have more than 8 papers)
+%
+%
+% Packages
+%
+% insert HERE any additional packages
+\input{packages}
+%
+%
+% Commands
+%
+% insert HERE any additional commands
+\input{commands}
+
+
+%-------------------------------------------------------------------------------
+% Thesis information
+%-------------------------------------------------------------------------------
+%
+\title[On the stability of a galaxy far, far away]% Title used in the abstract (optional)
+{% Title of the thesis
+	On the stability\\of a galaxy far, far away
+}%
+
+\author{Anakin Skywalker}% Author
+
+\affiliation
+{%	Author's affiliation
+	Linn\'e FLOW Centre, KTH Mechanics, Royal Institute of Technology\\
+	SE-100 44 Stockholm, Sweden%
+}%
+
+\titel
+{% Swedish title (for swedish abstract)
+	P\r{a} stabiliteten i en galax l\r{a}ngt, l\r{a}ngt borta
+}%
+
+\anslutning
+{% Author's swedish affiliation (for swedish abstract)
+	Linn\'e FLOW Centre, KTH Mekanik, Kungliga Tekniska H\"ogskolan\\
+	SE-100 44 Stockholm, Sverige%
+}%
+
+\date{Stockholm}{February}{3641}% City, Month, Year
+
+\info{% Defence information (in swedish)
+	Akademisk avhandling som med tillst\aa nd av Kungliga Tekniska H\"{o}gskolan
+	i Stockholm framl\"{a}gges till offentlig granskning f\"{o}r avl\"{a}ggande
+	av teknologie
+	doktorsexamen % doctorsexamen/licentiatsexamen
+	s\"{o}ndagen den 30 Februari 3641 kl 23:30 % day
+	i sal K47, % room
+	Kungliga Tekniska H\"{o}gskolan, Tatooinev\"agen 69, Coruscant.% address
+}%
+
+\printer{Universitetsservice US--AB, Stockholm}% Printer informations
+
+
+%===============================================================================
+%===============================================================================
+%                            BEGIN DOCUMENT
+%===============================================================================
+%===============================================================================
+
+%\includeonly{introduction}
+
+\begin{document}
+
+
+%===============================================================================
+% Frontmatter
+%===============================================================================
+%
+\frontmatter
+
+\input{frontmatter}
+
+
+%===============================================================================
+% Part I: Introduction
+%===============================================================================
+%
+\mainmatter
+
+\part{Overview and summary}
+
+%-------------------------------------------------------------------------------
+% Introduction
+%
+\include{introduction}
+
+
+%===============================================================================
+% Part II: Papers
+%===============================================================================
+%
+\part{Papers}
+
+%-------------------------------------------------------------------------------
+% Paper 1
+%
+\include{paper1/paper}
+
+%-------------------------------------------------------------------------------
+% Paper 2
+%
+\include{paper2/paper}
+
+
+%===============================================================================
+%===============================================================================
+%                            END DOCUMENT
+%===============================================================================
+%===============================================================================
+\end{document}
