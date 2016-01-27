@@ -17,8 +17,8 @@ or not, thank us or not.
 
 
 
-1. COMPILE
-
+COMPILE
+-------
 A Makefile has been developed for this template and tested for 'pdflatex' and
 'lualatex'. The options implemented are:
 
@@ -42,8 +42,8 @@ this feature can be found at https://en.wikibooks.org/wiki/TeX/includeonly.
 
 
 
-2. USE OF THE TEMPLATE
-
+USE OF THE TEMPLATE
+-------------------
 
 2.1 Papers
 
@@ -72,7 +72,7 @@ folder.
 We reccomend to add commands and packages in these files only.
 
 
-2.4 List of options for the class, defaults are in []:
+2.4 List of options for the class, defaults are in [ ]:
 
  - paper size:
     - a4paper:       A4 format
