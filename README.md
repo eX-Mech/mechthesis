@@ -5,7 +5,7 @@
 MechThesis
 ==========
 
-Jacopo Canton, Nicolo` Fabbiane (in alphabetical order)
+Jacopo Canton, Nicolo` Fabbiane (in alphabetical order)<br /> 
 January, 2016
 
 
