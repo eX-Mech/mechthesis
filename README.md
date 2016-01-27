@@ -1,8 +1,8 @@
 MechThesis
 ==========
 
-'Jacopo Canton, Nicolo` Fabbiane (in alphabetical order)
-December, 2015'
+Jacopo Canton, Nicolo` Fabbiane (in alphabetical order)
+December, 2015
 
 
 This template is meant for PhD and Licentiate thesis at KTH Mechanics.
