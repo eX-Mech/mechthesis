@@ -74,41 +74,41 @@ We reccomend to add commands and packages in these files only.
 **List of options for the class** -- defaults are in [ ]:
 
  - paper size:
-    - a4paper:       A4 format
-    - letterpaper:   US letter format
-    - thesissisze:   old paper format for the thesis
-    - thesissizeA4:  A4 format, different margins
-    -[thesissizeG5]: G5 format (current format for the thesis)
+    - a4paper:        A4 format
+    - letterpaper:    US letter format
+    - thesissisze:    old paper format for the thesis
+    - thesissizeA4:   A4 format, different margins
+    - [thesissizeG5]: G5 format (current format for the thesis)
 
  - printing:
-    -[twoside]: two sided pages
-    - oneside:  one sided pages
+    - [twoside]: two sided pages
+    - oneside:   one sided pages
 
  - columns:
-    -[onecolumn]: one column text
-    - twocolumns: two column text
+    - [onecolumn]: one column text
+    - twocolumns:  two column text
 
  - font size: 8pt, 9pt, [10pt], 11pt, 12pt
 
  - position of equation numbers:
-    - leqno:  equation numbers flushed to the left of the page
-    -[reqno]: equation numbers flushed to the right of the page
+    - leqno:   equation numbers flushed to the left of the page
+    - [reqno]: equation numbers flushed to the right of the page
 
  - split-equation numbers:
-    -[tbtags]:    equation numbers vertically aligned with last eq. line
-    - centertags: equation numbers vertically centered to the equation
+    - [tbtags]:    equation numbers vertically aligned with last eq. line
+    - centertags:  equation numbers vertically centered to the equation
 
  - page numbers in papers:
-    -[globalpagenum]: papers' pages continue the introduction page numbering
-    - paperpagenum:   each paper has its own page numbering as P#-page
+    - [globalpagenum]: papers' pages continue the introduction page numbering
+    - paperpagenum:    each paper has its own page numbering as P#-page
 
  - editing:
-    -[final]:    generate a complete pdf
-    - draft:     generate a pdf where figures are replaced by boxes
-    - printA4:   generate a pdf in A4, top-left aligned, with original margins
-                 (preferred by the printer US-AB in 2015)
-    - cropmarks: generate a pdf in A4, center aligned, with original margins
-                 and cropmarks
+    - [final]:    generate a complete pdf
+    - draft:      generate a pdf where figures are replaced by boxes
+    - printA4:    generate a pdf in A4, top-left aligned, with original margins
+                  (preferred by the printer US-AB in 2015)
+    - cropmarks:  generate a pdf in A4, center aligned, with original margins
+                  and cropmarks
 
  - paper covers:
     - happyadvisor: recomputes the paper tags spacing on the cover of each
