@@ -615,6 +615,25 @@
 }{
 	\clearpage%
 }%
+\newenvironment{papersnotincluded}{%
+	\clearpage%
+	\refstepcounter{frontsection}%
+	\noindent {\bf{Papers not included in this thesis}}%
+	\par%\smallskip\par%
+	\newcommand\paperitem[7]{%
+		% 1:authors, 2:year, 3:title, 4:Journal, 5:volume, 6:number, 7:pages
+		\bigskip\par%
+		\noindent%
+		{\sc ##1}%
+		\@ifempty{##2}{.}{, ##2.}%
+		\@ifempty{##3}{}{ {\it ##3}.}%
+		\@ifempty{##4}{}{ ##4}%
+		\@ifempty{##5}{}{ {\bf##5}}%
+		\@ifempty{##6}{}{ (##6)}%
+		\@ifempty{##7}{}{, ##7}.%
+	}%
+}{%
+}%
 %------------------------------------------------------------------------------
 % from JFM.cls
 \newenvironment{paperabstract}[1]
@@ -969,7 +988,7 @@
 	\fi
    \write\paperlistfile{%
    	\noindent%
-   	{\bf\papername \thepaper.} %
+   	{\bf\papername~\thepaper.} %
    	{\sc\ifx\@listpaperauthor\@empty\@shortpaperauthor\else\@listpaperauthor\fi}, %
    	\@paperyear. %
 		{\it\detokenize\expandafter{\ignorenewline}%
