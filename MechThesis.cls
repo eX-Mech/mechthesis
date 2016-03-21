@@ -1010,10 +1010,10 @@
    \write\paperlistfile{%
    	\noindent%
    	{\bf\papername~\thepaper.} %
-   	{\sc\ifx\@listpaperauthor\@empty\@shortpaperauthor\else\@listpaperauthor\fi}, %
-   	\@paperyear. %
+   	{\sc\ifx\@listpaperauthor\@empty\@shortpaperauthor\else\@listpaperauthor\fi}%
+   	\ifx\@paperyear\@empty{. }\else{, \@paperyear. }\fi%
 		{\it\detokenize\expandafter{\ignorenewline}%
-		    \detokenize\expandafter{\@papertitle}}. %
+		    \detokenize\expandafter{\@papertitle. }}%
 		\@paperpublishlst%
    }%
    \write\paperlistfile{\bigskip\par}
