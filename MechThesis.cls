@@ -601,7 +601,7 @@
 	\clearpage%
 }%
 \newenvironment{divisionofwork}[1]{%
-	\bigskip\par%\clearpage%
+	\bigskip\par%
 	\refstepcounter{frontsection}%
 	\noindent {\bf{Division of work between authors}}%
 	\par%\smallskip\par%
@@ -613,12 +613,12 @@
 		\noindent{\bf Paper \thelistcount.}~%
 	}%
 }{%
-	\bigskip\par%\clearpage%
+	\bigskip\par%
 }%
-\newenvironment{additionalpublications}[1]{%
+\newenvironment{otherpublications}[1]{%
 	\bigskip\par%
 	\refstepcounter{frontsection}%
-	\noindent {\bf{Additional publications}}%
+	\noindent {\bf{Other publications}}%
 	\par%\smallskip\par%
 	\@ifempty{#1}{}{\noindent #1 \smallskip\par}%
 	\newcommand\paperitem[7]{%
@@ -653,7 +653,7 @@
 		\@ifempty{##2}{.}{, ##2.}%
 	}%
 }{%
-	\bigskip\par
+	\bigskip\par%
 }%
 %------------------------------------------------------------------------------
 % from JFM.cls
