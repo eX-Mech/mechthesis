@@ -601,28 +601,29 @@
 	\clearpage%
 }%
 \newenvironment{divisionofwork}[1]{%
-	\clearpage%
+	\bigskip\par%\clearpage%
 	\refstepcounter{frontsection}%
 	\noindent {\bf{Division of work between authors}}%
 	\par%\smallskip\par%
-	\noindent #1 \bigskip\par%
+	\@ifempty{#1}{}{\noindent #1 \smallskip\par}%
 	\newcounter{listcount}\setcounter{listcount}{0}%
 	\newcommand\paperitem{%
 		\stepcounter{listcount}
-		\bigskip\par%
+		\smallskip\par%
 		\noindent{\bf Paper \thelistcount.}~%
 	}%
-}{
-	\clearpage%
+}{%
+	\bigskip\par%\clearpage%
 }%
-\newenvironment{papersnotincluded}{%
-	\clearpage%
+\newenvironment{additionalpublications}[1]{%
+	\bigskip\par%
 	\refstepcounter{frontsection}%
-	\noindent {\bf{Papers not included in this thesis}}%
+	\noindent {\bf{Additional publications}}%
 	\par%\smallskip\par%
+	\@ifempty{#1}{}{\noindent #1 \smallskip\par}%
 	\newcommand\paperitem[7]{%
-		% 1:authors, 2:year, 3:title, 4:Journal, 5:volume, 6:number, 7:pages
-		\bigskip\par%
+		% 1:authors, 2:year, 3:title, 4:journal, 5:volume, 6:number, 7:pages
+		\smallskip\par%
 		\noindent%
 		{\sc ##1}%
 		\@ifempty{##2}{.}{, ##2.}%
@@ -633,6 +634,26 @@
 		\@ifempty{##7}{}{, ##7}.%
 	}%
 }{%
+	\bigskip\par%
+}%
+\newenvironment{conferences}[1]{%
+	\bigskip\par
+	\refstepcounter{frontsection}%
+	\noindent {\bf{Conferences}}%
+	\par%\smallskip\par%
+	\@ifempty{#1}{}{\noindent #1 \smallskip\par}%
+	\newcommand\conferenceitem[5]{%
+		% 1:authors, 2:year, 3:title, 4:conference, 5:location
+		\smallskip\par%
+		\noindent%
+		{\sc ##1.}%
+		\@ifempty{##3}{}{ {\it ##3}.}%
+		\@ifempty{##4}{}{ ##4}%
+		\@ifempty{##5}{.}{. ##5}%
+		\@ifempty{##2}{.}{, ##2.}%
+	}%
+}{%
+	\bigskip\par
 }%
 %------------------------------------------------------------------------------
 % from JFM.cls
