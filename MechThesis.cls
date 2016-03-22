@@ -590,9 +590,9 @@
 	\endgroup%
 	\noindent\ignorespaces%
 }{%
-	\bigskip\bigskip\par%
+	\bigskip\par%
 	\IfFileExists{\jobname.pls}{\input{\jobname.pls}}{}
-	~\bigskip\par%
+	\bigskip\par%
 	\flushright%
 	\@month~\@year,~\@city%
 	\par%
@@ -600,27 +600,26 @@
 	\par%
 	\clearpage%
 }%
-\newenvironment{divisionofwork}[1]{%
+\newenvironment{divisionofwork}{%
 	\bigskip\par%
 	\refstepcounter{frontsection}%
 	\noindent {\bf{Division of work between authors}}%
-	\par%\smallskip\par%
-	\@ifempty{#1}{}{\noindent #1 \smallskip\par}%
+	\par%
 	\newcounter{listcount}\setcounter{listcount}{0}%
 	\newcommand\paperitem{%
 		\stepcounter{listcount}
 		\smallskip\par%
 		\noindent{\bf Paper \thelistcount.}~%
 	}%
+	\noindent\ignorespaces%
 }{%
 	\bigskip\par%
 }%
-\newenvironment{otherpublications}[1]{%
+\newenvironment{otherpublications}{%
 	\bigskip\par%
 	\refstepcounter{frontsection}%
 	\noindent {\bf{Other publications}}%
-	\par%\smallskip\par%
-	\@ifempty{#1}{}{\noindent #1 \smallskip\par}%
+	\par%
 	\newcommand\paperitem[7]{%
 		% 1:authors, 2:year, 3:title, 4:journal, 5:volume, 6:number, 7:pages
 		\smallskip\par%
@@ -633,15 +632,15 @@
 		\@ifempty{##6}{}{ (##6)}%
 		\@ifempty{##7}{}{, ##7}.%
 	}%
+	\noindent\ignorespaces%
 }{%
 	\bigskip\par%
 }%
-\newenvironment{conferences}[1]{%
+\newenvironment{conferences}{%
 	\bigskip\par
 	\refstepcounter{frontsection}%
 	\noindent {\bf{Conferences}}%
-	\par%\smallskip\par%
-	\@ifempty{#1}{}{\noindent #1 \smallskip\par}%
+	\par%
 	\newcommand\conferenceitem[5]{%
 		% 1:authors, 2:year, 3:title, 4:conference, 5:location
 		\smallskip\par%
@@ -652,6 +651,7 @@
 		\@ifempty{##5}{.}{. ##5}%
 		\@ifempty{##2}{.}{, ##2.}%
 	}%
+	\noindent\ignorespaces%
 }{%
 	\bigskip\par%
 }%
