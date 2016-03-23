@@ -1136,7 +1136,7 @@
 		{\normalfont\LARGE\fontswitch\bfseries \@papertitle\par}%
 		\vskip 14\p@ \@plus 2\p@ \@minus 1\p@
 		{\normalfont\large\fontswitch\bfseries \baselineskip=12\p@
-		   By\ns \uppercase{\@paperauthor}\par}%
+		   \uppercase{\@paperauthor}\par}%By\ns \uppercase{\@paperauthor}\par}%
 		\vskip 4\p@ \@plus 1\p@
 		{\normalfont\small \@paperaffiliation \par}%
 		\vskip 8\p@ \@plus 2\p@ \@minus 1\p@
