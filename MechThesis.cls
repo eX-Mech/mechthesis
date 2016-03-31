@@ -299,7 +299,7 @@
 		{\leftmark}\hfil%
 	}%
    \def\@oddhead{%
-		{\small \hfil {\rightmark}}% headings are not centered (right)
+		\small \hfil {\rightmark}% headings are not centered (right)
 		\hspace{8mm}\llap{\thepage}%
 	}%
    \let\@mkboth\markboth
@@ -849,9 +849,9 @@
    \fontsize{\@xxpt}{25}\bfseries
       #1\vfil\vfil\endgroup \newpage\thispagestyle{empty}}
 \def\partrunhead#1#2#3{%
-   \@ifnotempty{#2}{\uppercase{#1 #2}\@ifnotempty{#3}{. }}%
+   \@ifnotempty{#2}{\scshape{#1 #2}\@ifnotempty{#3}{. }}%
    \def\@tempa{#3}%
-   \ifx\@empty\@tempa\else\uppercasenonmath\@tempa\@tempa\fi}
+   \ifx\@empty\@tempa\else\scshape\@tempa\fi}
 \let\chapterrunhead\partrunhead
 \let\sectionrunhead\partrunhead
 %------------------------------------------------------------------------------
@@ -1035,7 +1035,7 @@
    \write\papersummfile{\bigskip\par}
    %
 	\pagestyle{paper}
-	\def\bibname{references}
+	\def\bibname{References}
 	\renewenvironment{thebibliography}[1]{%
 		\bigskip
 		\centerline{\normalsize\scshape\@xp{\bibname}}
