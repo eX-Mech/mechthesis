@@ -1153,13 +1153,15 @@
                \scshape\@xp{\chaptername}\enspace\thechapter}
            \vskip 3pc}}\hskip\leftskip\fi
       \bfseries #1\par \endgroup
-   \skip@34\p@ \advance\skip@-\normalbaselineskip
+%   \skip@34\p@ \advance\skip@-\normalbaselineskip
+   \skip@52\p@ \advance\skip@-\normalbaselineskip
    \vskip\skip@ }
 \def\@makeschapterhead#1{\global\topskip 7.5pc\relax
    \begingroup
    \fontsize{\@xivpt}{18}\centering
    \bfseries #1\par \endgroup
-   \skip@34\p@ \advance\skip@-\normalbaselineskip
+%   \skip@34\p@ \advance\skip@-\normalbaselineskip
+   \skip@52\p@ \advance\skip@-\normalbaselineskip
    \vskip\skip@ }
 \def\appendix{\par
    \c@chapter\z@ \c@section\z@
