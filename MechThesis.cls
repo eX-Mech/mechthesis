@@ -549,7 +549,7 @@
 	\noindent\ignorespaces%
 }{%
 	\bigskip\bigskip\par%
-	\noindent{\bf Keywords:~}\@descriptors
+	\noindent{\bf Key words:~}\@descriptors
 	\clearpage%
 }%
 \newenvironment{abstrakt}[1]{%
@@ -663,7 +663,7 @@
    {\par\vskip 9\p@ \@plus 1\p@ \@minus 1\p@
     \ifx\@paperkeywords\@empty
     \else
-      \noindent\small{\bf Keywords:} \@paperkeywords
+      \noindent\small{\bf Key words:} \@paperkeywords
       \par\vskip 5\p@ \@plus 1\p@ \@minus 1\p@
     \fi
     \vbox{\centerline{\rule[4\p@]{\textwidth}{.4\p@}}}}
@@ -1035,15 +1035,10 @@
    \write\papersummfile{\bigskip\par}
    %
 	\pagestyle{paper}
-	\def\bibname{References}
+	\def\bibname{references}
 	\renewenvironment{thebibliography}[1]{%
 		\clearpage
-		\@xp\section\@xp*\@xp{\bibname}
-		% different def of thebibliography in papers, section not chapter
-		\par\vskip 20\p@ \@plus 1\p@ \@minus 1\p@
-		\nobreak
-		\vskip 4\p@ \@plus .5\p@ \@minus .5\p@
-		\nobreak
+		\centerline{\normalsize\scshape\@xp{\bibname}}
 		\list{}{\labelwidth\z@ \leftmargin 2em \itemindent -2em \itemsep 1\p@}%
 		\normalfont\small \parindent\z@
 		\parskip\z@ \@plus .1\p@\relax
@@ -1136,7 +1131,7 @@
 		{\normalfont\LARGE\fontswitch\bfseries \@papertitle\par}%
 		\vskip 14\p@ \@plus 2\p@ \@minus 1\p@
 		{\normalfont\large\fontswitch\bfseries \baselineskip=12\p@
-		   \uppercase{\@paperauthor}\par}%By\ns \uppercase{\@paperauthor}\par}%
+		   \uppercase{\@paperauthor}\par}
 		\vskip 4\p@ \@plus 1\p@
 		{\normalfont\small \@paperaffiliation \par}%
 		\vskip 8\p@ \@plus 2\p@ \@minus 1\p@
@@ -1158,7 +1153,7 @@
            \centerline{\normalsize\mdseries
                \uppercase\@xp{\chaptername}\enspace\thechapter}
            \vskip 3pc}}\hskip\leftskip\fi
-      #1\par \endgroup
+      \bfseries #1\par \endgroup
    \skip@34\p@ \advance\skip@-\normalbaselineskip
    \vskip\skip@ }
 \def\@makeschapterhead#1{\global\topskip 8.5pc\relax
