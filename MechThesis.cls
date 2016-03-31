@@ -613,7 +613,7 @@
 		\noindent{\bf Paper \thelistcount.}~%
 	}%
 }{%
-	\bigskip\par%
+	\medskip\par%
 }%
 \newenvironment{otherpublications}[1]{%
 	\bigskip\par%
@@ -634,7 +634,7 @@
 		\@ifempty{##7}{}{, ##7}.%
 	}%
 }{%
-	\bigskip\par%
+	\medskip\par%
 }%
 \newenvironment{conferences}[1]{%
 	\bigskip\par
@@ -653,7 +653,7 @@
 		\@ifempty{##2}{.}{, ##2.}%
 	}%
 }{%
-	\bigskip\par%
+	\medskip\par%
 }%
 %------------------------------------------------------------------------------
 % from JFM.cls
