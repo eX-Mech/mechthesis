@@ -959,7 +959,7 @@
 \newcounter{table}[chapter]
 \newenvironment{acknowledgements}{%
    \chapter*{Acknowledgements}%
-   \par\vskip 10\p@ \@plus 1\p@ \@minus 1\p@%
+%   \par\vskip 10\p@ \@plus 1\p@ \@minus 1\p@%
 }{%
 	\par%
 }%
@@ -1145,20 +1145,20 @@
 %------------------------------------------------------------------------------
 \def\@makechapterhead#1{\global\topskip 7.5pc\relax
    \begingroup
-   \fontsize{\@xivpt}{18}\upshape\centering
+   \fontsize{\@xivpt}{18}\centering
      \ifnum\c@secnumdepth>\m@ne
        \leavevmode \hskip-\leftskip
        \rlap{\vbox to\z@{\vss
            \centerline{\normalsize\mdseries
-               \uppercase\@xp{\chaptername}\enspace\thechapter}
+               \scshape\@xp{\chaptername}\enspace\thechapter}
            \vskip 3pc}}\hskip\leftskip\fi
       \bfseries #1\par \endgroup
    \skip@34\p@ \advance\skip@-\normalbaselineskip
    \vskip\skip@ }
-\def\@makeschapterhead#1{\global\topskip 8.5pc\relax
+\def\@makeschapterhead#1{\global\topskip 7.5pc\relax
    \begingroup
-   \fontsize{\@xivpt}{18}\bfseries\centering
-   #1\par \endgroup
+   \fontsize{\@xivpt}{18}\centering
+   \bfseries #1\par \endgroup
    \skip@34\p@ \advance\skip@-\normalbaselineskip
    \vskip\skip@ }
 \def\appendix{\par
@@ -1297,10 +1297,10 @@
 \newcommand\bibls{\kern.065em\relax}
 \newenvironment{thebibliography}[1]{%
   \@xp\chapter\@xp*\@xp{\bibname}
-  \par\vskip 20\p@ \@plus 1\p@ \@minus 1\p@
-  \nobreak
-  \vskip 4\p@ \@plus .5\p@ \@minus .5\p@
-  \nobreak
+%  \par\vskip 20\p@ \@plus 1\p@ \@minus 1\p@
+%  \nobreak
+%  \vskip 4\p@ \@plus .5\p@ \@minus .5\p@
+%  \nobreak
   \list{}{\labelwidth\z@ \leftmargin 2em \itemindent -2em \itemsep 1\p@}%
   \normalfont\small \parindent\z@
   \parskip\z@ \@plus .1\p@\relax
