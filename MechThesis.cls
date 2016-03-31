@@ -1037,7 +1037,6 @@
 	\pagestyle{paper}
 	\def\bibname{references}
 	\renewenvironment{thebibliography}[1]{%
-		\clearpage
 		\centerline{\normalsize\scshape\@xp{\bibname}}
 		\list{}{\labelwidth\z@ \leftmargin 2em \itemindent -2em \itemsep 1\p@}%
 		\normalfont\small \parindent\z@
@@ -1047,7 +1046,6 @@
 	}{%
 		\def\@noitemerr{\@latex@warning{Empty `thebibliography' environment}}%
 		\endlist
-		\clearpage
 	}
 	\def\appendix{%
 		\par
