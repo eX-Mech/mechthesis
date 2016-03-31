@@ -1194,6 +1194,7 @@
 \def\contentsname{Contents}
 \def\listfigurename{List of Figures}
 \def\listtablename{List of Tables}
+\def\tocpagebreak{\addtocontents{toc}{\protect\clearpage}}
 \def\tableofcontents{%
 	\cleardoublepage%
 	\refstepcounter{frontsection}%
