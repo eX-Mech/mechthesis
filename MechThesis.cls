@@ -1037,6 +1037,7 @@
 	\pagestyle{paper}
 	\def\bibname{references}
 	\renewenvironment{thebibliography}[1]{%
+		\bigskip
 		\centerline{\normalsize\scshape\@xp{\bibname}}
 		\list{}{\labelwidth\z@ \leftmargin 2em \itemindent -2em \itemsep 1\p@}%
 		\normalfont\small \parindent\z@
