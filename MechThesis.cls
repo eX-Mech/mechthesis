@@ -613,7 +613,7 @@
 	}%
 	\noindent\ignorespaces%
 }{%
-	\bigskip\par%
+	\medskip\par%
 }%
 \newenvironment{otherpublications}{%
 	\bigskip\par%
@@ -634,7 +634,7 @@
 	}%
 	\noindent\ignorespaces%
 }{%
-	\bigskip\par%
+	\medskip\par%
 }%
 \newenvironment{conferences}{%
 	\bigskip\par
@@ -653,7 +653,7 @@
 	}%
 	\noindent\ignorespaces%
 }{%
-	\bigskip\par%
+	\medskip\par%
 }%
 %------------------------------------------------------------------------------
 % from JFM.cls
