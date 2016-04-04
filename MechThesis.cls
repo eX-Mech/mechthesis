@@ -655,6 +655,9 @@
 }{%
 	\medskip\par%
 }%
+\newcommand{\thesisstructure}{%
+	\bigskip\par{\noindent{\bf Thesis structure.}~\ignorespaces}%
+}%
 %------------------------------------------------------------------------------
 % from JFM.cls
 \newenvironment{paperabstract}[1]
