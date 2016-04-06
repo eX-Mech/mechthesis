@@ -530,8 +530,11 @@
 	\cleardoublepage%
 }%
 %
-\newenvironment{abstract}[1]{%
-	\gdef\@descriptors{#1}%
+\newenvironment{abstract}{%
+	\newcommand\keywords[1]{%
+		\bigskip\bigskip\par%
+		\noindent{\bf Key words:~}##1
+	}%
 	\clearpage%
 	\refstepcounter{frontsection}%
    \typeout{Abstract\space\@secnumber}%
@@ -548,12 +551,13 @@
 	\par%
 	\noindent\ignorespaces%
 }{%
-	\bigskip\bigskip\par%
-	\noindent{\bf Key words:~}\@descriptors
 	\clearpage%
 }%
-\newenvironment{abstrakt}[1]{%
-	\gdef\@descriptors{#1}%
+\newenvironment{abstrakt}{%
+	\newcommand\nyckelord[1]{%
+		\bigskip\bigskip\par%
+		\noindent{\bf Nyckelord:~}##1
+	}%
 	\clearpage%
 	\refstepcounter{frontsection}%
 	\begin{otherlanguage}{swedish}
@@ -572,8 +576,6 @@
 	\par%
 	\noindent\ignorespaces%
 }{%
-	\bigskip\bigskip\par%
-	\noindent{\bf Nyckelord:~}\@descriptors%
 	\end{otherlanguage}
 	\clearpage%
 }%
