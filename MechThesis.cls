@@ -660,15 +660,14 @@
 }%
 %------------------------------------------------------------------------------
 % from JFM.cls
-\newenvironment{paperabstract}[1]
-   {\par\normalfont\normalsize\noindent\ignorespaces
-    \def\@paperkeywords{#1}}
-   {\par\vskip 9\p@ \@plus 1\p@ \@minus 1\p@
-    \ifx\@paperkeywords\@empty
-    \else
-      \noindent\small{\bf Key words:} \@paperkeywords
-      \par\vskip 5\p@ \@plus 1\p@ \@minus 1\p@
-    \fi
+\newenvironment{paperabstract}
+   {\newcommand\keywords[1]{%
+			\par\vskip 9\p@ \@plus 1\p@ \@minus 1\p@
+    	\noindent\small{\bf Key words:} ##1\par
+		 }%
+		\par\normalfont\normalsize\noindent\ignorespaces
+	 }%
+   {\par\vskip 5\p@ \@plus 1\p@ \@minus 1\p@
     \vbox{\centerline{\rule[4\p@]{\textwidth}{.4\p@}}}}
 %------------------------------------------------------------------------------
 \def\labelenumi{\theenumi.}
