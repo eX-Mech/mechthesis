@@ -981,9 +981,8 @@
 	%
 	\let\@secnumber\thepaper%
    \def\@toclevel{0}%
-   %\if@paperpagenum\def\thepage{~}\fi
    \let\temp\thepage
-   \def\thepage{~}
+   \if@paperpagenum\def\thepage{~}\fi
 	\@tocwriteb\tocpaper{paper}{\@papertoctitle}
 	\makepaperhead
    \let\thepage\temp
@@ -1271,7 +1270,7 @@
 \def\l@chapter{ \@tocline{0}{8pt plus1pt}{0pt}{}{\bfseries}}
 \let\tocchapter\tocsection
 \let\tocappendix\tocchapter
-\def\l@paper{ \@tocline{0}{8pt plus1pt}{0pt}{56pt}{\bfseries}}
+\def\l@paper{ \@tocline{0}{8pt plus1pt}{0pt}{}{\bfseries}}
 \let\tocpaper\tocchapter
 \def\l@part{ \@tocline{-1}{20pt plus2pt}{0pt}{}{\bfseries}}
 \newcommand{\tocpart}[3]{%
