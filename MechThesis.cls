@@ -1,5 +1,15 @@
 %
-% This is file `Mechthesis.cls'
+% This file is Mechthesis.cls
+%
+% part of MechThesis template: https://github.com/jcanton/mechthesis.git
+%
+% Jacopo Canton, Nicolò Fabbiane (in alphabetical order)
+% jcanton<at>mech.kth.se, nicolo<at>mech.kth.se
+%
+% Based on the template by the (not-so-)anonymous DS. Thank you, DS.
+%
+% April, 2016
+%
 %==============================================================================
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{MechThesis}[2015/11/20]

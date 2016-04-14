@@ -1,10 +1,17 @@
 # MechThesis
 
+part of MechThesis template: https://github.com/jcanton/mechthesis.git
+
 Jacopo Canton, Nicolò Fabbiane (in alphabetical order)<br /> 
-January, 2016
+jcanton<at>mech.kth.se, nicolo<at>mech.kth.se
+
+April, 2016
 
 
 This template is meant for PhD and Licentiate thesis at KTH Mechanics.
+It is based on the previous template by the (not-so-)anonymous DS.
+Thank you, DS.
+
 This is just a STARTING POINT: you can use it or not, like it or not, edit it
 or not, thank us or not.
 
