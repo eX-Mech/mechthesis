@@ -3,14 +3,14 @@
 part of MechThesis template: https://github.com/jcanton/mechthesis.git
 
 Jacopo Canton, Nicolò Fabbiane (in alphabetical order)<br /> 
-jcanton<at>mech.kth.se, nicolo<at>mech.kth.se
+jcanton-at-mech.kth.se, nicolo-at-mech.kth.se
 
 April, 2016
 
 
-This template is meant for PhD and Licentiate thesis at KTH Mechanics.
+This template is meant for PhD and Licentiate thesis at KTH Mechanics.<br /> 
 It is based on the previous template by the (not-so-)anonymous DS.
-Thank you, DS.
+Thank you, DS.<br /> 
 
 This is just a STARTING POINT: you can use it or not, like it or not, edit it
 or not, thank us or not.
