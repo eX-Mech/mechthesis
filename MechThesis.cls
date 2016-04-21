@@ -1038,10 +1038,10 @@
    \write\papersummfile{%
    	\unexpanded{\noindent}%
    	{\unexpanded{\large}\bf\papername~\thepaper}%
-   	\unexpanded{\\*[\smallskipamount]}%
+   	\unexpanded{\\*[\medskipamount]}%
 		{\it\detokenize\expandafter{\ignorenewline}%
 		    \detokenize\expandafter{\@papertitle}}%
-   	\unexpanded{\\*[\smallskipamount]}%
+   	\unexpanded{\\*[\medskipamount]}%
    }%
    \write\papersummfile{\@papersummary}%
    \write\papersummfile{\bigskip\par}
