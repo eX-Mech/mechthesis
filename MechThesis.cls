@@ -1036,15 +1036,14 @@
 		\immediate\openout\papersummfile=\jobname.psm\relax
 	\fi
    \write\papersummfile{%
-   	\noindent%
+   	\unexpanded{\noindent}%
    	{\unexpanded{\large}\bf\papername~\thepaper}%
-   	\smallskip\par%
-		\noindent%
+   	\unexpanded{\\*[\smallskipamount]}%
 		{\it\detokenize\expandafter{\ignorenewline}%
 		    \detokenize\expandafter{\@papertitle}}%
-   	\smallskip\par%
+   	\unexpanded{\\*[\smallskipamount]}%
    }%
-   \write\papersummfile{\noindent \@papersummary}%
+   \write\papersummfile{\@papersummary}%
    \write\papersummfile{\bigskip\par}
    %
 	\pagestyle{paper}
@@ -1154,7 +1153,7 @@
 	\vskip 8\p@ \@plus 2\p@ \@minus 1\p@
 }%
 \def\makepapersummary{%
-	\IfFileExists{\jobname.pls}{\input{\jobname.psm}}{}
+	\IfFileExists{\jobname.pls}{{\raggedbottom\input{\jobname.psm}}}{}
 }%
 %------------------------------------------------------------------------------
 \def\@makechapterhead#1{\global\topskip 7.5pc\relax
