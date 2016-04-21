@@ -621,7 +621,7 @@
 	\newcommand\paperitem{%
 		\stepcounter{listcount}
 		\smallskip\par%
-		\noindent{\bf Paper \thelistcount.}~%
+		\noindent{\bf\papername~\thelistcount.}~%
 	}%
 	\noindent\ignorespaces%
 }{%
@@ -1039,7 +1039,7 @@
    	\noindent%
    	{\unexpanded{\large}\bf\papername~\thepaper}%
    	\smallskip\par%
-   	\noindent%
+		\noindent%
 		{\it\detokenize\expandafter{\ignorenewline}%
 		    \detokenize\expandafter{\@papertitle}}%
    	\smallskip\par%
@@ -1111,7 +1111,7 @@
 		\thispagestyle{empty}
 		\topskip 50mm
 		\begin{center}
-			{\Huge \bf  Paper \thepaper}
+			{\Huge\bf\papername~\thepaper}
 		\end{center}
 		{\vskip -40mm}
 		{\vskip -\paperblackbox}
