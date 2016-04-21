@@ -1153,7 +1153,7 @@
 	\vskip 8\p@ \@plus 2\p@ \@minus 1\p@
 }%
 \def\makepapersummary{%
-	\IfFileExists{\jobname.pls}{{\raggedbottom\input{\jobname.psm}}}{}
+	\IfFileExists{\jobname.pls}{{\raggedbottom\input{\jobname.psm}}\flushbottom}{}
 }%
 %------------------------------------------------------------------------------
 \def\@makechapterhead#1{\global\topskip 7.5pc\relax
