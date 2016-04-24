@@ -23,20 +23,19 @@ SRCS = jfm.bst              \
        commands.tex         \
        frontmatter.tex      \
        acknowledgements.tex \
-       introduction.tex     \
+       overview.tex         \
        $(main).tex          \
        $(main).bib          \
-       paper?/article.tex   \
-       paper?/paper.tex
+       $(subst /,/paper.tex,$(wildcard paper*/))
 
-AUXS = introduction.aux \
-       $(main).aux      \
-       $(main).toc      \
-       $(main).pls      \
-       $(main).psm      \
+AUXS = overview.aux \
+       $(main).aux  \
+       $(main).toc  \
+       $(main).pls  \
+       $(main).psm  \
        $(subst /,/paper.aux,$(wildcard paper*/))
 
-BBLS = introduction.bbl \
+BBLS = overview.bbl \
        $(subst /,/paper.bbl,$(wildcard paper*/))
 
 # Rules:
