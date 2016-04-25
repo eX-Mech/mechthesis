@@ -1067,7 +1067,7 @@
 		\def\thesubsection{\@Alph\c@section .\arabic{subsection}}
 	}
 }{%
-	\clearpage%
+	\cleardoublepage%
 	\paperinit
 }%
 % end of definition of paper environment
