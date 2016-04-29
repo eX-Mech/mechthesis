@@ -1,0 +1,81 @@
+\documentclass[a4paper]{letter}
+%
+% Template to generate cover letters and labels.
+%
+% part of MechThesis template: https://github.com/jcanton/mechthesis.git
+%
+
+%-------------------------------------------------------------------------------
+% Student's information
+%-------------------------------------------------------------------------------
+%
+% Address
+\address{Linn\'{e} FLOW Centre\\% controlla accento
+         KTH Mechanics\\%
+         SE-100 44 Stockholm, Sweden}
+%
+% Signature
+\signature{Anakin Skywalker}
+
+%-------------------------------------------------------------------------------
+% Distribution list
+%-------------------------------------------------------------------------------
+%
+\usepackage{mailing}
+\addressfile{distribution-list.dat}
+
+%-------------------------------------------------------------------------------
+% Cover-letter template
+%-------------------------------------------------------------------------------
+%
+% Date
+\date{Coruscant, 9 February 3641}
+%
+% Letter's body
+\mailingtext{%
+  please find a copy of my doctoral thesis enclosed to this letter.
+  The oral defence will take place on %
+  Sunday 30 February 3641 at 11:30PM, % day
+  in room K47, % room
+  Tatooinev\"agen 69, % address
+  Royal Institute of Technology (KTH), Stockholm, Sweden.
+
+  \closing{Yours sincerely,}
+}%
+
+%-------------------------------------------------------------------------------
+% Labels parameters
+%-------------------------------------------------------------------------------
+%
+\usepackage[nocapaddress]{envlab}
+%-------------------------------------------------------------------------------
+% Setting for two columns of labels per page (A4)
+%\SetLabel{105mm}%  width
+%         {48mm}%   height
+%         {4mm}%    top margin
+%         {0mm}%    left margin
+%         {0mm}%    right margin
+%         {2}%      number of columns per page
+%         {6}%      number of rows per page
+%-------------------------------------------------------------------------------
+% Setting for three columns of labels per page (A4)
+\SetLabel{66.6mm}% width
+         {35.8mm}% height
+         {5mm}%    top margin
+         {5mm}%    left margin
+         {0mm}%    right margin
+         {3}%      number of columns per page
+         {8}%      number of rows per page
+%-------------------------------------------------------------------------------
+\makelabels
+
+
+%===============================================================================
+%===============================================================================
+%                     GENERATE COVER-LETTERS AND LABELS
+%===============================================================================
+%===============================================================================
+%
+\begin{document}
+  \makemailing
+\end{document}

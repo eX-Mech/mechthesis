@@ -1,0 +1,62 @@
+% 
+% Distribution list file formatted for package 'mailing'
+%
+% Entry format:
+% Name of addressee
+% Address (use \\ for new line)
+% Opening text of the letter
+% <blank line>
+%
+%-------------------------------------------------------------------------------
+% KTH Mekanik
+%-------------------------------------------------------------------------------
+%
+Prof. Arne Johansson
+KTH Mechanics\\SE-100 44 Stockholm\\Sweden\\SE-100 44 Stockholm, Sweden
+Dear Prof. Johansson,
+
+%-------------------------------------------------------------------------------
+% KTH
+%-------------------------------------------------------------------------------
+%
+Farkost \& Flyg
+KTH\\SE-100 44 Stockholm, Sweden
+Dear Ms./Mr.,
+
+%-------------------------------------------------------------------------------
+% Sweden
+%-------------------------------------------------------------------------------
+%
+Biblioteket
+FOI\\SE-164 90 Stockholm, Sweden
+Dear Ms./Mr.,
+
+Division of Fluid Mechanics
+Lule\r{a} University\\SE-971 87 Lule\aa, Sweden
+Dear Ms./Mr.,
+
+Avd. Str\"omningsteknik
+Energivetenskaper\\Lunds Universitet, Box 118\\SE-221 00 Lund, Sweden
+Dear Ms./Mr.,
+
+Dept. Thermo \& Fluid Mech.
+Chalmers University\\SE-412 96, G\"oterborg, Sweden
+Dear Ms./Mr.,
+
+%-------------------------------------------------------------------------------
+% Europe
+%-------------------------------------------------------------------------------
+%
+%-------------------------------------------------------------------------------
+% World
+%-------------------------------------------------------------------------------
+%
+%-------------------------------------------------------------------------------
+% Committe
+%-------------------------------------------------------------------------------
+%
+Prof. Marino Gatto
+Dip. di Ingegneria Elettronica\\Politecnico di Milano\\Via Ponzio 34/5\\20133 Milano, Italy
+Dear Prof. Gatto,
+
+% Leave a blank line in the end of the list
