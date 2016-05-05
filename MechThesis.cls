@@ -992,7 +992,7 @@
 	\let\@secnumber\thepaper%
    \def\@toclevel{0}%
    \let\temp\thepage
-   \if@paperpagenum\def\thepage{~}\fi
+   \if@paperpagenum\def\thepage{P\thepaper}\fi
 	\@tocwriteb\tocpaper{paper}{\@papertoctitle}
 	\makepaperhead
    \let\thepage\temp
@@ -1153,18 +1153,7 @@
 	\vskip 8\p@ \@plus 2\p@ \@minus 1\p@
 }%
 \def\makepapersummary{%
-  \def\summarytitle{Summary of the papers}
-  \typeout{\summarytitle}%
-  \let\@secnumber\@empty
-  \def\@toclevel{0}%
-  \let\temp\thepage
-  \if@paperpagenum\def\thepage{~}\fi
-  \@tocwriteb\tocpaper{chapter}{\summarytitle}
-  \chaptermark{\summarytitle}%
-  \addtocontents{lof}{\protect\addvspace{10\p@}}%
-  \addtocontents{lot}{\protect\addvspace{10\p@}}%
-  \@makeschapterhead{\summarytitle}\@afterheading
-  \let\thepage\temp
+  \chapter*{Summary of the papers}
   \IfFileExists{\jobname.pls}{{\raggedbottom\input{\jobname.psm}}\flushbottom}{}
 }%
 %------------------------------------------------------------------------------
@@ -1291,11 +1280,11 @@
 \def\l@chapter{ \@tocline{0}{8pt plus1pt}{0pt}{}{\bfseries}}
 \let\tocchapter\tocsection
 \let\tocappendix\tocchapter
-\if@paperpagenum
-  \def\l@paper{ \@tocline{0}{8pt plus1pt}{0pt}{55pt}{\bfseries}}
-\else
+%\if@paperpagenum
+%  \def\l@paper{ \@tocline{0}{8pt plus1pt}{0pt}{55pt}{\bfseries}}
+%\else
   \def\l@paper{ \@tocline{0}{8pt plus1pt}{0pt}{}{\bfseries}}
-\fi
+%\fi
 \let\tocpaper\tocchapter
 \def\l@part{ \@tocline{-1}{20pt plus2pt}{0pt}{}{\bfseries}}
 \newcommand{\tocpart}[3]{%
