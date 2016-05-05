@@ -1153,7 +1153,19 @@
 	\vskip 8\p@ \@plus 2\p@ \@minus 1\p@
 }%
 \def\makepapersummary{%
-	\IfFileExists{\jobname.pls}{{\raggedbottom\input{\jobname.psm}}\flushbottom}{}
+  \def\summarytitle{Summary of the papers}
+  \typeout{\summarytitle}%
+  \let\@secnumber\@empty
+  \def\@toclevel{0}%
+  \let\temp\thepage
+  \if@paperpagenum\def\thepage{~}\fi
+  \@tocwriteb\tocpaper{chapter}{\summarytitle}
+  \chaptermark{\summarytitle}%
+  \addtocontents{lof}{\protect\addvspace{10\p@}}%
+  \addtocontents{lot}{\protect\addvspace{10\p@}}%
+  \@makeschapterhead{\summarytitle}\@afterheading
+  \let\thepage\temp
+  \IfFileExists{\jobname.pls}{{\raggedbottom\input{\jobname.psm}}\flushbottom}{}
 }%
 %------------------------------------------------------------------------------
 \def\@makechapterhead#1{\global\topskip 7.5pc\relax
