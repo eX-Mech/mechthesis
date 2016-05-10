@@ -988,7 +988,9 @@
 \newenvironment{paper}{
 	\refstepcounter{paper}%
 	\renewcommand{\HyperDestNameFilter}[1]{paper\thepaper##1}
+	%
 	\let\tlabel\label \renewcommand{\label}[1]{\tlabel{P\thepaper:##1}}
+	\let\tlabeleq\label@in@display \renewcommand{\label@in@display}[1]{\tlabeleq{P\thepaper:##1}}
 	\let\tref\ref \renewcommand{\ref}[1]{\tref{P\thepaper:##1}}
 	%
 	\let\@secnumber\thepaper%
