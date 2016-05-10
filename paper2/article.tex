@@ -362,6 +362,103 @@ known as $h_{*}(n) = \log {1.32} ^ { \log \sqrt{n} }$.
  understanding of compilers.
 
 
+%===============================================================================
+\section{Test section}
+%===============================================================================
+
+This section is meant for testing the correct referencing of figures, equations
+and tables.
+
+% equations
+%
+\begin{equation}
+	1 + 1 = 2
+	\label{eq:test_eq1}
+\end{equation}
+
+\begin{align}
+	2 + 2 = 4
+	\label{eq:test_eq2}
+\end{align}
+
+\begin{equation}
+	3 + 3 = 6
+	\label{eq:test_eq3_paper2}
+\end{equation}
+
+% tables
+%
+\begin{table}
+	\centering
+	\begin{tabular}{c}
+		1
+	\end{tabular}
+	\caption{Test table 1}
+	\label{tab:test_tab1}
+\end{table}
+
+\begin{table}
+	\centering
+	\begin{tabular}{c}
+		2
+	\end{tabular}
+	\caption{Test table 2}
+	\label{tab:test_tab2}
+\end{table}
+
+\begin{table}
+	\centering
+	\begin{tabular}{c}
+		3
+	\end{tabular}
+	\caption{Test table 3}
+	\label{tab:test_tab3_paper2}
+\end{table}
+
+% figures
+%
+\begin{figure}[h!]
+	\centering
+	test figure 1
+	\caption{Test figure 1}
+	\label{fig:test_fig1}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	test figure 2
+	\caption{Test figure 2}
+	\label{fig:test_fig2}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	test figure 3
+	\caption{Test figure 3}
+	\label{fig:test_fig3_paper2}
+\end{figure}
+
+% test references
+%
+\hrule
+\begin{itemize}
+	\item reference to equation 1: \eqref{eq:test_eq1}
+	\item reference to equation 2: \eqref{eq:test_eq2}
+	\item reference to equation 3: \eqref{eq:test_eq3_paper2}
+\end{itemize}
+\hrule
+\begin{itemize}
+	\item reference to table 1: \eqref{tab:test_tab1}
+	\item reference to table 2: \eqref{tab:test_tab2}
+	\item reference to table 3: \eqref{tab:test_tab3_paper2}
+\end{itemize}
+\hrule
+\begin{itemize}
+	\item reference to figure 1: \eqref{fig:test_fig1}
+	\item reference to figure 2: \eqref{fig:test_fig2}
+	\item reference to figure 3: \eqref{fig:test_fig3_paper2}
+\end{itemize}
+\hrule
 
 
 
