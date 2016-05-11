@@ -1281,15 +1281,17 @@
 \let\tocsubsection\tocsection
 \def\l@subsubsection{\@tocline{3}{0pt}{3pc}{7pc}{}}
 \let\tocsubsubsection\tocsection
-\def\l@chapter{ \@tocline{0}{8pt plus1pt}{0pt}{}{\bfseries}}
-\let\tocchapter\tocsection
+%\def\l@chapter{ \@tocline{0}{8pt plus1pt}{0pt}{}{\bfseries}}
+%\let\tocchapter\tocsection
+\def\l@chapter{ \@tocline{0}{8pt plus1pt}{0pt}{66pt}{\bfseries}}
+\newcommand{\tocchapter}[3]{%
+	\indentlabel{\@ifnotempty{#2}{\rlap{\ignorespaces#1~#2.}\hspace{66pt}}}#3%
+}
 \let\tocappendix\tocchapter
-%\if@paperpagenum
-%  \def\l@paper{ \@tocline{0}{8pt plus1pt}{0pt}{55pt}{\bfseries}}
-%\else
-  \def\l@paper{ \@tocline{0}{8pt plus1pt}{0pt}{}{\bfseries}}
-%\fi
-\let\tocpaper\tocchapter
+\def\l@paper{ \@tocline{0}{8pt plus1pt}{0pt}{55pt}{\bfseries}}
+\newcommand{\tocpaper}[3]{%
+	\indentlabel{\@ifnotempty{#2}{\rlap{\ignorespaces#1~#2.}\hspace{55pt}}}#3%
+}
 \def\l@part{ \@tocline{-1}{20pt plus2pt}{0pt}{}{\bfseries}}
 \newcommand{\tocpart}[3]{%
 	\@ifnotempty{#2}{\ignorespaces#1 #2 -\ }#3%
