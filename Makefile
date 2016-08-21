@@ -47,6 +47,7 @@ all: $(main)
 $(main): $(SRCS) $(AUXS) $(BBLS)
 	@echo building $(main) with $(TEX)
 	@$(TEX) $(TEX_FLAGS) -draftmode $(main) #> /dev/null
+	@sed -i -e 's/toPaper/Paper/g' thesis.out	
 	@$(TEX) $(TEX_FLAGS) $(main) #> /dev/null
 
 $(AUXS): $(SRCS)
