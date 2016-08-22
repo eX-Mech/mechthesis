@@ -31,10 +31,10 @@ that need to be edited.
  - Student's information: edit the address and the signature according to
 			  your personal data.
  - Cover letter template: edit date and body (`\mailingtext`) of the letter
- - Labels parameters: adjust the label dimension to your paper format.
+ - Labels parameters: adjust dimensions to your paper format.
 
 ### distribution-list.dat
-Insert the information according to the instruction in the file.
+Insert the information according to the instructions in the file.
 
 
 We decline any responsibility for the usage of this template including bugs,
