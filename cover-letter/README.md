@@ -25,7 +25,7 @@ A Makefile has been developed for this template and tested for `pdflatex` and
 
 ## USE OF THE TEMPLATE
 The templates is made by two files (`cover.tex` and `distribution-list.dat`)
-that needs to be edited.
+that need to be edited.
 
 ### cover.tex
  - Student's information: edit the address and the signature according to
