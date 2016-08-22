@@ -8,7 +8,7 @@ jcanton-at-mech.kth.se, nicolo-at-mech.kth.se
 April, 2016
 
 
-This template creates cove letters and labls for the thesis distribution.
+This template creates cover letters and labels for the thesis distribution.
 It is based on the `mailing` package.
 
 This is just a STARTING POINT: you can use it or not, like it or not, edit it
@@ -19,7 +19,7 @@ or not, thank us or not.
 A Makefile has been developed for this template and tested for `pdflatex` and
 `lualatex`. The options implemented are:
 
- - `all`(default): compile the whole package (BibTeX included)
+ - `all`(default): compile the whole package
  - `clean`:        clean all auxiliary files (except the pdf)
 
 
