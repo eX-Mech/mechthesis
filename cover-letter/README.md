@@ -1,4 +1,4 @@
-# MechThesis
+# Cover letter
 
 part of MechThesis template: https://github.com/jcanton/mechthesis.git
 
