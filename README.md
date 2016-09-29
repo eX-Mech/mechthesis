@@ -5,10 +5,10 @@ part of MechThesis template: https://github.com/jcanton/mechthesis.git
 Jacopo Canton, Nicolò Fabbiane (in alphabetical order)<br /> 
 jcanton-at-mech.kth.se, nicolo-at-mech.kth.se
 
-April, 2016
+September, 2016
 
 
-This template is meant for PhD and Licentiate thesis at KTH Mechanics.<br /> 
+This template is meant for PhD and Licentiate theses at KTH Mechanics.<br /> 
 It is based on the previous template by the (not-so-)anonymous DS.
 Thank you, DS.<br /> 
 
@@ -56,9 +56,8 @@ of the Papers' are automatically written using the paper information found in
 `paper.tex`.
 
 ### Packages and commands
-Two files have been addressed to contain custom commands and packages:
-`commands.tex` and `packages.tex`. These files are located in the main
-folder.
+Two files are provided for custom commands and packages: `commands.tex` and
+`packages.tex`. These files are located in the main folder.
 We reccomend to add commands and packages in these files only.
 
 ### List of options for the class, defaults are in [ ]:

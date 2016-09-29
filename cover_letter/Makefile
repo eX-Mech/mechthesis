@@ -1,5 +1,5 @@
 #------------------------------------------------------------------------------
-# This is a makefile tailored to work on the latex documents for the
+# This is a makefile tailored to work with the LaTeX documents for the
 # Licentiate and PhD thesis (MechThesis).
 #------------------------------------------------------------------------------
 
@@ -18,7 +18,7 @@ BIB_FLAGS =
 # Dependencies:
 #
 SRCS = $(main).tex          \
-       distribution-list.dat
+       distribution_list.dat
 
 AUXS = $(main).aux
 

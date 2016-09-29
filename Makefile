@@ -1,5 +1,5 @@
 #------------------------------------------------------------------------------
-# This is a makefile tailored to work on the latex documents for the
+# This is a makefile tailored to work with the latex documents for the
 # Licentiate and PhD thesis (MechThesis).
 #------------------------------------------------------------------------------
 
