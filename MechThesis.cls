@@ -8,7 +8,7 @@
 %
 % Based on the template by the (not-so-)anonymous DS. Thank you, DS.
 %
-% April, 2016
+% November, 2017
 %
 %==============================================================================
 \NeedsTeXFormat{LaTeX2e}
@@ -169,6 +169,7 @@
 \newcommand\LARGE{\@xsetfontsize\LARGE 9}
 \newcommand\huge{\@xsetfontsize\huge{10}}
 \newcommand\Huge{\@xsetfontsize\Huge{11}}
+\newcommand{\change}[1]{{\color{Rhodamine}#1}}
 \def\@xsetfontsize#1#2{%
    \chardef\@currsizeindex#2\relax
    \edef\@tempa{\@nx\@setfontsize\@nx#1%
@@ -357,7 +358,7 @@
 %
 \expandafter\@iden
 %
-\RequirePackage{color}\relax
+\usepackage[dvipsnames]{xcolor}\relax
 \RequirePackage{amsmath}\relax
 \RequirePackage{amsfonts}\relax
 \RequirePackage{amssymb}\relax
