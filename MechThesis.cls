@@ -267,6 +267,7 @@
 %------------------------------------------------------------------------------
 %
 \let\paragraphname\@empty
+\let\subparagraphname\@empty
 \let\sectionname\@empty
 \let\subsectionname\@empty
 \let\subsubsectionname\@empty
@@ -816,6 +817,7 @@
 \newcounter{subsection}[section]
 \newcounter{subsubsection}[subsection]
 \newcounter{paragraph}[subsubsection]
+\newcounter{subparagraph}[paragraph]
 \newcounter{frontsection}
 \newcounter{paper}
 \newcounter{paperpage}
@@ -1274,6 +1276,8 @@
 \newcommand{\tocparagraph}[3]{%
 	\indentlabel{\@ifnotempty{#2}{\ignorespaces#1 #2.\quad}}#3%
 }
+\def\l@subparagraph{\@tocline{3}{0pt}{2pc}{5pc}{}}
+\let\tocsubparagraph\tocparagraph
 \def\l@section{\@tocline{1}{0pt}{1pc}{}{}}
 \newcommand{\tocsection}[3]{%
 	\indentlabel{\@ifnotempty{#2}{\ignorespaces#1 #2.\quad}}#3%
