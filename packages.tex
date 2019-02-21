@@ -25,6 +25,11 @@
 \usepackage{natbib} % Flexible bibliography support
 \usepackage[hidelinks]{hyperref} % Extensive support for hypertext in LaTeX
 \usepackage{caption} % Correct figures and tables caption width
+\usepackage{etoolbox} % Make robust some counters that are made fragile by `calc`
+\robustify\setcounter
+\robustify\addtocounter
+\robustify\setlength
+\robustify\addtolength
 %
 % The following packages are loaded by MechThesis.cls and need not to be loaded
 % in this file:
