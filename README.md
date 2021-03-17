@@ -1,6 +1,6 @@
 # MechThesis
 
-part of MechThesis template: https://github.com/jcanton/mechthesis.git
+part of MechThesis template: https://github.com/eX-Mech/mechthesis.git
 
 Jacopo Canton, Nicolò Fabbiane (in alphabetical order)<br /> 
 jcanton-at-mech.kth.se, nicolo-at-mech.kth.se
