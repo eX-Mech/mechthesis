@@ -13,3 +13,16 @@
 \newcommand\Rey{\mbox{\textit{Re}}}  % Reynolds number
 \newcommand\Pran{\mbox{\textit{Pr}}} % Prandtl number, cf TeX's \Pr product
 \newcommand\Pen{\mbox{\textit{Pe}}}  % Peclet number
+
+% Commands to include custom images in the footers (implemented for odd-numbered pages of the paper sections)
+%
+% This command creates the path to the images and inserts them:
+% format: [path to file]/movie_p[paper_number]_[pagenumber_in_paper].png
+%
+\newcommand{\numberedimage}[1][]{%
+  \includegraphics[#1]{movie_p\arabic{paper}_\arabic{paperpage}.png}%
+}
+% This command places the image (\put) and defines its size (width).
+\newcommand{\putimg}{%
+    \begin{picture}(0,0) \put(341,-41){\numberedimage[width=1.9cm]} \end{picture}%
+}
