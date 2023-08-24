@@ -17,10 +17,10 @@
 % Commands to include custom images in the footers (implemented for odd-numbered pages of the paper sections)
 %
 % This command creates the path to the images and inserts them:
-% format: [path to file]/movie_p[paper_number]_[pagenumber_in_paper].png
+% format: [path to file]/[basename]_[paper_number]_[pagenumber_in_paper].[ext]
 %
 \newcommand{\numberedimage}[1][]{%
-  \includegraphics[#1]{movie_p\arabic{paper}_\arabic{paperpage}.png}%
+  \includegraphics[#1]{img/flip_book/FB_example_\arabic{paper}_\arabic{paperpage}.jpg}%
 }
 % This command places the image (\put) and defines its size (width).
 \newcommand{\putimg}{%
