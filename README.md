@@ -55,6 +55,9 @@ The paper list in the preface, the table of contents and the chapter 'Summary
 of the Papers' are automatically written using the paper information found in
 `paper.tex`.
 
+##### Flip book for the papers
+There is the option to add a 'flip book' feature to the thesis, currently only implemented for the papers. This feature allows you to add custom images to the footer of odd pages in the papers that will generate a 'movie' as you flip through the  printed document. In order to disble the feature in MechThesis.cls, comment lines 352-353 and 363-368 and uncomment lines 349-350 and 360-361.
+
 ### Packages and commands
 Two files are provided for custom commands and packages: `commands.tex` and
 `packages.tex`. These files are located in the main folder.
@@ -102,7 +105,6 @@ We reccomend to add commands and packages in these files only.
  - paper covers:
     - `happyadvisor`: recomputes the paper tags spacing on the cover of each
                       paper if you have more than 8 papers
-
 
 We decline any responsibility for the usage of this template including bugs,
 bed-bugs, formatting errors, unhappy advisors, Justin Bieber and death; not 
