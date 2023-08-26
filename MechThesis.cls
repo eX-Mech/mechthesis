@@ -345,14 +345,26 @@
 		\itshape\@shortpaperauthor\hfil%
 	}%
 %	\def\@oddfoot{\normalfont\scriptsize \hfill\stepcounter{paperpage}\thepaperpage\hfill}%
-	\def\@oddfoot{}%
-	\let\@evenfoot\@oddfoot
+	%  Standard empty footers
+	% \def\@oddfoot{}%
+	% \let\@evenfoot\@oddfoot
+        %  Images in the footer on the odd pages (which will be visible when flipping through the printed copy)
+        \def\@oddfoot{\putimg} % the putimg command is defined in command.tex
+	\def\@evenfoot{}       % even footer is empty
    \def\sectionmark##1{\markboth{##1}{}}%
    \def\subsectionmark##1{\markright{##1}}%
 }
 \def\ps@paperplain{
 	\ps@empty
-	\def\@oddfoot{\normalfont\scriptsize \hfill\stepcounter{paperpage}\if@paperpagenum\thepaperpage\else\thepage\fi\hfill}%
+	%  Standard footers with centered page number
+	% \def\@oddfoot{\normalfont\scriptsize \hfill\stepcounter{paperpage}\if@paperpagenum\thepaperpage\else\thepage\fi\hfill}%
+	% \let\@evenfoot\@oddfoot
+	%  Images in the footer on the odd pages (in addition to the page numbering)
+	\def\@oddfoot{%
+    	\putimg
+    	\normalfont\scriptsize \hfill\stepcounter{paperpage}%
+    	\if@paperpagenum\thepaperpage\else\thepage\fi\hfill%
+    	}
 	\let\@evenfoot\@oddfoot
 }
 %------------------------------------------------------------------------------
